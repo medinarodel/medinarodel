@@ -25,9 +25,9 @@
         <!-- Everything you want hidden at 940px or less, place within here -->
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Job History</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li class="<%= 'active' if self.action_name.eql?('index')%>"><a href="<%= root_path%>">Home</a></li>
+            <li class="<%= 'active' if self.action_name.eql?('jobs')%>"><a href="<%= jobs_path%>">Job History</a></li>
+            <li class="<%= 'active' if self.action_name.eql?('portfolio')%>"><a href="<%= portfolio_path%>">Portfolio</a></li>
           </ul>
         </div>
 
@@ -36,7 +36,14 @@
   </div>
 
   <div class="container-fluid">
-  	<%= yield %>
+    <div class="row-fluid">
+      <div class="span2">
+        <%= knows%>
+      </div>
+      <div class="span10">
+  	    <%= yield %>
+  	  </div>
+  	</div>
   </div>
 
 </body>
