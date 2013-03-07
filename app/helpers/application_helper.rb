@@ -17,10 +17,11 @@ module ApplicationHelper
         'Twitter API',
         'LinkedIn API',
         'SendGrid API',
-        'Didoline API'
-    ].sort.map do |tech|
-      content_tag(:div, tech, class: 'well well-small')
-    end.join('').html_safe
+        'Didoline API',
+        'Twitter Boostrap'
+    ].shuffle.map do |tech|
+      content_tag(:span, tech, class: 'badge')
+    end.join('<br />').html_safe
   end
   
   def badge
