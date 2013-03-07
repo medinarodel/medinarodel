@@ -20,12 +20,11 @@ module ApplicationHelper
         'Didoline API',
         'Twitter Boostrap'
     ].shuffle.map do |tech|
-      content_tag(:span, tech, class: 'badge')
+      content_tag(:div, tech, class: "alert alert-#{color}")
     end.join('<br />').html_safe
   end
   
-  def badge
-    ['badge badge-important', 'badge badge-success', 'badge badge-info', 'badge badge-warning', 'badge badge-inverse', 'badge'].sample
-    ''
+  def color
+    ['success', 'info', ''].sample
   end
 end
