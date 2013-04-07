@@ -7,21 +7,21 @@ module ApplicationHelper
         'AJAX', 
         'HTML', 
         'CSS', 
-        'HAML', 
-        'SLIM', 
-        'ERB', 
-        'JS Coffee', 
-        'SCSS', 
-        'SASS',
-        'Facebook API',
-        'Twitter API',
-        'LinkedIn API',
-        'SendGrid API',
-        'Didoline API',
-        'Twitter Boostrap'
-    ].shuffle.map do |tech|
-      content_tag(:div, tech, class: "alert alert-#{color}")
-    end.join('<br />').html_safe
+        'API - Facebook',
+        'API - Twitter',
+        'API - LinkedIn',
+        'API - SendGrid',
+        'API - Didoline',
+        'API - Twillio',
+        'Twitter Boostrap',
+        'PSD to HTML',
+        'Google Maps',
+        'Google Charts'
+    ].sort.map do |tech|
+
+      content_tag(:li, tech)
+
+    end.join(' ').html_safe
   end
   
   def color

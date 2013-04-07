@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def jobs
   end
+  
+  def contact
+  end
 end
