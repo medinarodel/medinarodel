@@ -14,12 +14,14 @@
     <th>IP</th>
     <th>URL</th>
     <th>DETAILS</th>
+    <th>DATE</th>
   </r>
-<% Tracker.order(:created_at).each do |track|%>
+<% Tracker.order('created_at DESC').each do |track|%>
 <tr>
   <td><%= track.ip%></td>
   <td><%= track.url%></td>
   <td><%= track.details%></td>
+  <td><%= track.created_at.strftime('%B %d %Y at %I:%M%p')%></td>
 </r>
 <% end %>
 </table>
