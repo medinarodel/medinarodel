@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <div class="navbar">
+  <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
 
@@ -21,15 +21,17 @@
         </a>
 
         <!-- Be sure to leave the brand out there if you want it shown -->
-        <a class="brand" href="#">The Resume</a>
+        <a class="brand" href="#">My Resume</a>
 
         <!-- Everything you want hidden at 940px or less, place within here -->
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li class="<%= 'active' if self.action_name.eql?('index')%>"><a href="<%= root_path%>">Home</a></li>
-            <li class="<%= 'active' if self.action_name.eql?('jobs')%>"><a href="<%= jobs_path%>">Job History</a></li>
-            <li class="<%= 'active' if self.action_name.eql?('portfolio')%>"><a href="<%= portfolio_path%>">Portfolio</a></li>
-            <li class="<%= 'active' if self.action_name.eql?('contact')%>"><a href="<%= contact_path%>">Contact</a></li>
+            <li class="<%= 'active' if self.action_name.eql?('index')%>">
+              <a href="<%= root_path%>">Home</a>
+            </li>
+            <li class="<%= 'active' if self.action_name.eql?('contact')%>">
+              <a href="<%= contact_path%>">Contact</a>
+            </li>
           </ul>
         </div>
 
@@ -37,15 +39,8 @@
     </div>
   </div>
 
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <!-- <div class="span2">
-        <%= knows%>
-      </div> -->
-      <div class="span12">
-  	    <%= yield %>
-  	  </div>
-  	</div>
+  <div class="container main-container">
+    <%= yield %>
   </div>
 
 </body>

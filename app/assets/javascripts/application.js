@@ -13,3 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(function(){
+  $('.portfolios a').popover({
+    trigger: 'hover',
+    html: true
+  })
+})
