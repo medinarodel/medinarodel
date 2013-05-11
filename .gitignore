@@ -16,3 +16,6 @@
 
 #database.yml
 /tmp/database.yml
+
+#database.yml
+/config/database.yml
