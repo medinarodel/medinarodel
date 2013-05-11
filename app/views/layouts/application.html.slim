@@ -1,0 +1,25 @@
+doctype
+html
+  head
+    title Rodel Samson Medina
+    = favicon_link_tag
+    = stylesheet_link_tag    "application", :media => "all" 
+    = javascript_include_tag "application" 
+    = csrf_meta_tags
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+          a.brand href=(root_path(notracking: params[:notracking])) My Resume
+          .nav-collapse.collapse
+            ul.nav
+              li class='#{'active' if self.action_name.eql?('contact')}'
+                a href=(contact_path(notracking: params[:notracking]))
+                  | Contact
+    .container.main-container
+      = yield 
