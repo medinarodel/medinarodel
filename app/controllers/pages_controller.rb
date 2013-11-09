@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def views
   end
+
+  def abc
+  end
 end
