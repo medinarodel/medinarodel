@@ -1,25 +1,28 @@
-doctype
-html
+doctype html
+html lang="en"
   head
     title Rodel Samson Medina
-    = favicon_link_tag
-    = stylesheet_link_tag    "application", :media => "all" 
-    = javascript_include_tag "application" 
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   body
-    .navbar.navbar-inverse.navbar-fixed-top
-      .navbar-inner
-        .container
-          a.btn.btn-navbar data-target=".nav-collapse" data-toggle="collapse"
+    .navbar.navbar-inverse.navbar-fixed-top.navbar-blue role="navigation" 
+      .container
+        .navbar-header
+          button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
 
-          a.brand href=(root_path(notracking: params[:notracking])) My Resume
-          .nav-collapse.collapse
-            ul.nav
-              li class='#{'active' if self.action_name.eql?('contact')}'
-                a href=(contact_path(notracking: params[:notracking]))
-                  | Contact
-    .container.main-container
-      = yield 
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a href=(root_path)  Home
+            li.hide
+              a href="#contact"  Contact
+        /! /.nav-collapse
+
+    .container
+      .main-container
+        = yield

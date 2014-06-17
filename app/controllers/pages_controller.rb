@@ -1,13 +1,5 @@
 class PagesController < ApplicationController
-  def index
-  end
-  
-  def contact
-  end
-
-  def views
-  end
-
-  def abc
+  def home
+    
   end
 end

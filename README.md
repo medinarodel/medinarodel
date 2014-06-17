@@ -1,4 +1,0 @@
-medinarodel
-===========
-
-about rodel.medina

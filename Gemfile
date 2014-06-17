@@ -1,20 +1,22 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'rails', '3.2.12'
+gem 'coffee-rails'
+gem 'jquery-rails'
+gem 'jbuilder'
+gem 'rails', '4.1.1'
+gem 'sass-rails'
+gem 'sqlite3'
+gem 'slim'
+# gem 'therubyracer', platforms: :ruby
+gem 'thin'
+gem 'turbolinks'
+gem 'uglifier'
 
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'jquery-rails'
-  gem 'uglifier', '>= 1.0.3'
+
+group :doc do
+  gem 'sdoc', require: false
 end
 
 group :development do
-  gem 'quiet_assets'
-  gem 'pry'
+  # gem 'binding'
 end
-
-gem 'coffee-rails', '~> 3.2.1'
-gem 'heroku'
-gem 'heroku-api'
-gem 'pg'
-gem 'slim'
