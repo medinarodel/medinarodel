@@ -1,0 +1,11 @@
+postgres cannot access the server configuration file "/usr/local/pgsql/data/postgresql.conf": No such file or directory
+LOG:  database system was shut down at 2014-06-21 22:05:50 PHT
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "medinarodel_dev" does not exist
+FATAL:  database "medinarodel_dev" does not exist
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down
