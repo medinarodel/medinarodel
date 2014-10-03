@@ -5,7 +5,6 @@ class PagesController < ApplicationController
   end
 
   def slack
-
-    render json: params
+    render text: ""
   end
 end
