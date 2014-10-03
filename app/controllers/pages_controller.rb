@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  protect_from_forgery :except => [:slack]
+
   def home
   end
 
