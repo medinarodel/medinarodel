@@ -3,5 +3,7 @@ class PagesController < ApplicationController
   end
 
   def slack
+
+    render json: params
   end
 end
