@@ -6,23 +6,17 @@ html lang="en"
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   body
-    .navbar.navbar-inverse.navbar-fixed-top.navbar-blue role="navigation" 
-      .container
-        .navbar-header
-          button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button" 
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-
-        .collapse.navbar-collapse
-          ul.nav.navbar-nav
-            li.active
-              a href=(root_path)  Home
-            li.hide
-              a href="#contact"  Contact
-        /! /.nav-collapse
-
     .container
       .main-container
+        / menu
+        ul.nav.nav-pills.nav-justified
+          li.active
+            = link_to 'About Me', root_path
+          li
+            = link_to 'Portfolio', portfolio_path
+          li
+            = link_to 'Contact', contact_path
+
+        hr
+
         = yield

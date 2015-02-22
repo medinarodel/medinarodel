@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.1.2'
 
 gem 'coffee-rails'
 gem 'jquery-rails'
@@ -8,16 +8,13 @@ gem 'pg'
 gem 'rails', '4.1.1'
 gem 'sass-rails'
 gem 'slim'
-# gem 'therubyracer', platforms: :ruby
 gem 'thin'
 gem 'turbolinks'
 gem 'uglifier'
 
+# tracker
+gem 'ahoy_matey'
 
 group :doc do
   gem 'sdoc', require: false
-end
-
-group :development do
-  # gem 'binding'
 end
