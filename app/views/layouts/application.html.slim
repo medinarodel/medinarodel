@@ -8,15 +8,4 @@ html lang="en"
   body
     .container
       .main-container
-        / menu
-        ul.nav.nav-pills.nav-justified
-          li.active
-            = link_to 'About Me', root_path
-          li
-            = link_to 'Portfolio', portfolio_path
-          li
-            = link_to 'Contact', contact_path
-
-        hr
-
         = yield

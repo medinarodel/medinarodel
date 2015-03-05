@@ -10,7 +10,7 @@ module ApplicationHelper
   end
 
  def knows
-    tags_builder [
+    [
         'Ruby on Rails', 
         'PHP', 
         'JQuery', 
@@ -31,7 +31,7 @@ module ApplicationHelper
         'Google Charts',
         'iOS',
         'AngularJS'
-    ]
+    ].sort.map { |tech|  content_tag(:span, tech, class: 'tech') }.join(' ').html_safe
   end
 
 end
