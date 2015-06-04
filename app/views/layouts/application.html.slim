@@ -1,11 +1,277 @@
 doctype html
-html lang="en"
+html lang="en" 
   head
-    title Rodel Samson Medina
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta content="width=device-width, initial-scale=1" name="viewport"
+    meta content="Rodel Samson Medina Website" name="description"
+    meta content="Rodel Samson Medina" name="author"
+    meta content="Rodel Samson Medina, iOS Developer, Swift, Objective C, Ruby on Rails, Web Developer, PHP" name="keywords"
+
+    title Rodel Samson Medina :: Web / iOS Developer
+
+    = stylesheet_link_tag "application", media: "all"
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Kaushan+Script"
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+
+  body#page-top.index
+    /! Navigation
+    nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        /! Brand and toggle get grouped for better mobile display
+        .navbar-header.page-scroll
+          button.navbar-toggle data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.page-scroll href="#page-top"  Rodel Medina
+        /! Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li.hidden
+              a href="#page-top" 
+            li
+              a.page-scroll href="#services"  Services
+            li
+              a.page-scroll href="#about"  About
+            li
+              a.page-scroll href="#contact"  Contact
+        /! /.navbar-collapse
+      /! /.container-fluid
+    /! Header
+    header
+      .container
+        .intro-text
+          .intro-lead-in Welcome To My Site!
+          .intro-heading It's Nice To Meet You
+          a.page-scroll.btn.btn-xl href="#about"  ABOUT ME
+    /! Services Section
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Services
+            h3.section-subheading.text-muted Responsive. API. Mobile.
+        .row.text-center
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-link.fa-stack-1x.fa-inverse
+            h4.service-heading Websites
+            p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-code.fa-stack-1x.fa-inverse
+            h4.service-heading Ruby on Rails
+            p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+          .col-md-4
+            span.fa-stack.fa-4x
+              i.fa.fa-circle.fa-stack-2x.text-primary
+              i.fa.fa-mobile-phone.fa-stack-1x.fa-inverse
+            h4.service-heading iOS
+            p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+    /! Portfolio Grid Section
+    / section#portfolio.bg-light-gray
+    /   .container
+    /     .row
+    /       .col-lg-12.text-center
+    /         h2.section-heading Portfolio
+    /         h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+    /     .row
+    /       .col-md-4.col-sm-6.portfolio-item
+    /         a.portfolio-link data-toggle="modal" href="#portfolioModal1" 
+    /         .portfolio-hover
+    /           .portfolio-hover-content
+    /             i.fa.fa-plus.fa-3x
+    /         img.img-responsive alt="" src=(image_path("portfolio/roundicons.png"))
+    /         .portfolio-caption
+    /           h4 Round Icons
+    /           p.text-muted Graphic Design
+    /       .col-md-4.col-sm-6.portfolio-item
+    /         a.portfolio-link data-toggle="modal" href="#portfolioModal2" 
+    /         .portfolio-hover
+    /           .portfolio-hover-content
+    /             i.fa.fa-plus.fa-3x
+    /         img.img-responsive alt="" src=(image_path("portfolio/startup-framework.png"))
+    /         .portfolio-caption
+    /           h4 Startup Framework
+    /           p.text-muted Website Design
+    /       .col-md-4.col-sm-6.portfolio-item
+    /         a.portfolio-link data-toggle="modal" href="#portfolioModal3" 
+    /         .portfolio-hover
+    /           .portfolio-hover-content
+    /             i.fa.fa-plus.fa-3x
+    /         img.img-responsive alt="" src=(image_path("portfolio/treehouse.png"))
+    /         .portfolio-caption
+    /           h4 Treehouse
+    /           p.text-muted Website Design
+    /       .col-md-4.col-sm-6.portfolio-item
+    /         a.portfolio-link data-toggle="modal" href="#portfolioModal4" 
+    /         .portfolio-hover
+    /           .portfolio-hover-content
+    /             i.fa.fa-plus.fa-3x
+    /         img.img-responsive alt="" src=(image_path("portfolio/golden.png"))
+    /         .portfolio-caption
+    /           h4 Golden
+              p.text-muted Website Design
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link data-toggle="modal" href="#portfolioModal5" 
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-plus.fa-3x
+            img.img-responsive alt="" src=(image_path("portfolio/escape.png"))
+            .portfolio-caption
+              h4 Escape
+              p.text-muted Website Design
+          .col-md-4.col-sm-6.portfolio-item
+            a.portfolio-link data-toggle="modal" href="#portfolioModal6" 
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-plus.fa-3x
+            img.img-responsive alt="" src=(image_path("portfolio/dreams.png"))
+            .portfolio-caption
+              h4 Dreams
+              p.text-muted Website Design
+    /! About Section
+    section#about
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading About
+            h3.section-subheading.text-muted Developer. Father. Husband.
+        .row
+          .col-lg-12
+            ul.timeline
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive alt="" src=(image_path("about/1.jpg"))
+                .timeline-panel
+                  .timeline-heading
+                    h4 Student years
+                    h4.subheading Fastfood Service Crew
+                  .timeline-body
+                    p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+              li
+                .timeline-image
+                  img.img-circle.img-responsive alt="" src=(image_path("about/1.jpg"))
+                .timeline-panel
+                  .timeline-heading
+                    h4 2006-2008
+                    h4.subheading Technical Support Representative
+                  .timeline-body
+                    p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive alt="" src=(image_path("about/3.jpg"))
+                .timeline-panel
+                  .timeline-heading
+                    h4 2008-2010
+                    h4.subheading PHP Developer
+                  .timeline-body
+                    p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+              li
+                .timeline-image
+                  img.img-circle.img-responsive alt="" src=(image_path("about/3.jpg"))
+                .timeline-panel
+                  .timeline-heading
+                    h4 2010-Present
+                    h4.subheading Ruby on Rails Developer
+                  .timeline-body
+                    p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+              li.timeline-inverted
+                .timeline-image
+                  img.img-circle.img-responsive alt="" src=(image_path("about/3.jpg"))
+                .timeline-panel
+                  .timeline-heading
+                    h4 Mid 2014-Present
+                    h4.subheading Part-time iOS Developer
+                  .timeline-body
+                    p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+              li.timeline-inverted
+                .timeline-image
+                  h4
+                    | Forever
+                    br
+                    | Student
+                    br 
+                    | of Life
+
+    /! Clients Aside
+    / aside.clients
+    /   .container
+    /     .row
+    /       .col-md-3.col-sm-6
+    /         a href="#" 
+    /           img.img-responsive.img-centered alt="" src=(image_path("logos/envato.jpg"))
+    /       .col-md-3.col-sm-6
+    /         a href="#" 
+    /           img.img-responsive.img-centered alt="" src=(image_path("logos/designmodo.jpg"))
+    /       .col-md-3.col-sm-6
+    /         a href="#" 
+    /           img.img-responsive.img-centered alt="" src=(image_path("logos/themeforest.jpg"))
+    /       .col-md-3.col-sm-6
+    /         a href="#" 
+    /           img.img-responsive.img-centered alt="" src=(image_path("logos/creative-market.jpg"))
+
+    /! Contact Section
+    section#contact
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Contact Me
+            h3.section-subheading.text-muted Email or Skype
+        .row
+          .col-lg-12.text-center.text-muted
+            | You can email me at 
+            = mail_to 'medinarodelsamson@gmail.com', 'medinarodelsamson@gmail.com'
+            |  or Skype 
+            = link_to 'medina.rodel', 'skype:medina.rodel?chat'
+            / form#contactForm name="sentMessage" novalidate="" 
+            /   .row
+            /     .col-md-6
+            /       .form-group
+            /         input#name.form-control data-validation-required-message=("Please enter your name.") placeholder=("Your Name *") required="" type="text" /
+            /         p.help-block.text-danger
+            /       .form-group
+            /         input#email.form-control data-validation-required-message=("Please enter your email address.") placeholder=("Your Email *") required="" type="email" /
+            /         p.help-block.text-danger
+            /       .form-group
+            /         input#phone.form-control data-validation-required-message=("Please enter your phone number.") placeholder=("Your Phone *") required="" type="tel" /
+            /         p.help-block.text-danger
+            /     .col-md-6
+            /       .form-group
+            /         textarea#message.form-control data-validation-required-message=("Please enter a message.") placeholder=("Your Message *") required="" 
+            /         p.help-block.text-danger
+            /     .clearfix
+            /     .col-lg-12.text-center
+            /       #success
+            /       button.btn.btn-xl type="submit"  Send Message
+    footer
+      .container
+        .row
+          .col-md-4
+            span.copyright Copyright &copy; Rodel Medina #{Date.today.year}
+          .col-md-4
+            ul.list-inline.social-buttons
+              li
+                a href="https://twitter.com/annedhel" 
+                  i.fa.fa-twitter
+              li
+                a href="https://www.facebook.com/rodel.medina" 
+                  i.fa.fa-facebook
+              li
+                a href="https://www.linkedin.com/in/medinarodel" 
+                  i.fa.fa-linkedin
+          .col-md-4
+            ul.list-inline.quicklinks
+              li
+                a href="#"  No Privacy Policy
+              li
+                a href="#"  No Terms of Use
+
+    /! jQuery
     = javascript_include_tag "application", "data-turbolinks-track" => true
-    = csrf_meta_tags
-  body
-    .container
-      .main-container
-        = yield
