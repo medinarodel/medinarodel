@@ -1,0 +1,131 @@
+header
+  .container
+    .intro-text
+      .intro-lead-in Welcome! @_@
+      .intro-heading It's Nice To Meet You
+      a.page-scroll.btn.btn-xl href="#about"  ABOUT ME
+/! Services Section
+section#services
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Services
+        h3.section-subheading.text-muted Responsive. API. Mobile.
+    .row.text-center
+      .col-md-4
+        span.fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x.text-primary
+          i.fa.fa-link.fa-stack-1x.fa-inverse
+        h4.service-heading Websites
+        p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+      .col-md-4
+        span.fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x.text-primary
+          i.fa.fa-code.fa-stack-1x.fa-inverse
+        h4.service-heading Ruby on Rails
+        p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+      .col-md-4
+        span.fa-stack.fa-4x
+          i.fa.fa-circle.fa-stack-2x.text-primary
+          i.fa.fa-mobile-phone.fa-stack-1x.fa-inverse
+        h4.service-heading iOS
+        p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+
+/! About Section
+section#about
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading About
+        h3.section-subheading.text-muted Developer. Father. Husband.
+    .row
+      .col-lg-12
+        ul.timeline
+          li
+            .timeline-image
+              img.img-circle.img-responsive alt="" src=(image_path("about/3.jpg"))
+            .timeline-panel
+              .timeline-heading
+                h4 2010-Present
+                h4.subheading Ruby on Rails Developer
+              .timeline-body
+                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+          li.timeline-inverted
+            .timeline-image
+              img.img-circle.img-responsive alt="" src=(image_path("about/3.jpg"))
+            .timeline-panel
+              .timeline-heading
+                h4 Mid 2014-Present
+                h4.subheading Part-time iOS Developer
+              .timeline-body
+                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+          li
+            .timeline-image
+              img.img-circle.img-responsive alt="" src=(image_path("about/3.jpg"))
+            .timeline-panel
+              .timeline-heading
+                h4 2008-2010
+                h4.subheading PHP Developer
+              .timeline-body
+                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+          li.timeline-inverted
+            .timeline-image
+              img.img-circle.img-responsive alt="" src=(image_path("about/1.jpg"))
+            .timeline-panel
+              .timeline-heading
+                h4 2006-2008
+                h4.subheading Technical Support Representative
+              .timeline-body
+                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+          li
+            .timeline-image
+              img.img-circle.img-responsive alt="" src=(image_path("about/1.jpg"))
+            .timeline-panel
+              .timeline-heading
+                h4 Student years
+                h4.subheading Fastfood Service Crew
+              .timeline-body
+                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+          li.timeline-inverted
+            .timeline-image
+              h4
+                | Soldier
+                br
+                | of
+                br 
+                | God
+
+
+/! Contact Section
+section#contact
+  .container
+    .row
+      .col-lg-12.text-center
+        h2.section-heading Contact Me
+        h3.section-subheading.text-muted Email or Skype
+    .row
+      .col-lg-12.text-center.text-muted
+        | You can email me at 
+        = mail_to 'medinarodelsamson@gmail.com', 'medinarodelsamson@gmail.com'
+        |  or Skype 
+        = link_to 'medina.rodel', 'skype:medina.rodel?chat'
+        / form#contactForm name="sentMessage" novalidate="" 
+        /   .row
+        /     .col-md-6
+        /       .form-group
+        /         input#name.form-control data-validation-required-message=("Please enter your name.") placeholder=("Your Name *") required="" type="text" /
+        /         p.help-block.text-danger
+        /       .form-group
+        /         input#email.form-control data-validation-required-message=("Please enter your email address.") placeholder=("Your Email *") required="" type="email" /
+        /         p.help-block.text-danger
+        /       .form-group
+        /         input#phone.form-control data-validation-required-message=("Please enter your phone number.") placeholder=("Your Phone *") required="" type="tel" /
+        /         p.help-block.text-danger
+        /     .col-md-6
+        /       .form-group
+        /         textarea#message.form-control data-validation-required-message=("Please enter a message.") placeholder=("Your Message *") required="" 
+        /         p.help-block.text-danger
+        /     .clearfix
+        /     .col-lg-12.text-center
+        /       #success
+        /       button.btn.btn-xl type="submit"  Send Message

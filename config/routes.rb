@@ -3,4 +3,5 @@ Medinarodel::Application.routes.draw do
   get 'home' => 'pages#home', as: :home
   get 'portfolio' => 'pages#portfolio', as: :portfolio
   get 'contact' => 'pages#contact', as: :contact
+  get 'views' => 'pages#views', as: :views
 end
