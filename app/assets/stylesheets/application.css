@@ -10,6 +10,6 @@
  *
  *= require_self
  *= require bootstrap.min
- *= require agency
+ *= require main
  *= require font-awesome
  */

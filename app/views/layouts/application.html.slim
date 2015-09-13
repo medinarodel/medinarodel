@@ -19,63 +19,7 @@ html lang="en"
     title Rodel Samson Medina :: Web / iOS Developer
 
     = stylesheet_link_tag "application", media: "all"
-    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Montserrat:400,700"
-    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Kaushan+Script"
-    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
-    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+    link href="https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,latin-ext" rel="stylesheet" 
 
-  body#page-top.index
-    /! Navigation
-    nav.navbar.navbar-default.navbar-fixed-top
-      .container
-        /! Brand and toggle get grouped for better mobile display
-        .navbar-header.page-scroll
-          button.navbar-toggle data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand.page-scroll href="#page-top"  Rodel Medina
-        /! Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
-          ul.nav.navbar-nav.navbar-right
-            li.hidden
-              a href="#page-top" 
-            li
-              a.page-scroll href="#services"  Services
-            li
-              a.page-scroll href="#about"  About
-            li
-              a.page-scroll href="#contact"  Contact
-        /! /.navbar-collapse
-      /! /.container-fluid
-    /! Header
-
+  body
     = yield
-
-    footer
-      .container
-        .row
-          .col-md-4
-            span.copyright Copyright &copy; Rodel Medina #{Date.today.year}
-          .col-md-4
-            ul.list-inline.social-buttons
-              li
-                a href="https://twitter.com/annedhel" 
-                  i.fa.fa-twitter
-              li
-                a href="https://www.facebook.com/rodel.medina" 
-                  i.fa.fa-facebook
-              li
-                a href="https://www.linkedin.com/in/medinarodel" 
-                  i.fa.fa-linkedin
-          .col-md-4
-            ul.list-inline.quicklinks
-              li
-                a href="#"  No Privacy Policy
-              li
-                a href="#"  No Terms of Use
-
-    / ! jQuery
-    / = Visit.all.to_json
-    = javascript_include_tag "application", "data-turbolinks-track" => true
