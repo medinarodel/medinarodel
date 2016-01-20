@@ -12,18 +12,21 @@ class PagesController < ApplicationController
 
   def randomizer
     @teams = params[:teams].to_s.split(',').shuffle
-    @player1 = 'Team A'
-    @player2 = 'Team B'
+    @players = params[:players].to_s.split(',').shuffle.take(2)
 
 
-    if @teams.count > 2 
-      @player1 = @teams[0]
-      @player2 = @teams[1]
+    if @teams.count > 2 && @players.count.eql?(2)
+      render json: {
+        @players[0] => @teams[0],
+        @players[1] => @teams[1]
+      }
+    else
+      render json: {
+        'mj' => 'CHI',
+        'bird' => 'BOS'
+      }
     end
 
-    render json: {
-      player1: @player1,
-      player2: @player2
-    }
+
   end
 end
