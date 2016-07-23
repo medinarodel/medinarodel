@@ -1,16 +1,20 @@
 source 'https://rubygems.org'
-ruby '2.1.5'
+ruby '2.3.1'
+
+gem 'jbuilder'
+gem 'pg'
+gem 'rails', '5.0.0'
+gem 'sass-rails'
+gem 'thin'
+gem 'uglifier'
+
+gem 'angularjs-rails'
+gem 'angular-rails-templates'
+gem 'angular-ui-router-rails'
 
 gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'jbuilder'
-gem 'pg'
-gem 'rails', '4.1.1'
-gem 'sass-rails'
 gem 'slim'
-gem 'thin'
-gem 'turbolinks'
-gem 'uglifier'
 
 # tracker
 gem 'ahoy_matey'

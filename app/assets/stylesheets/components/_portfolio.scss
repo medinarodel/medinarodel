@@ -1,0 +1,32 @@
+.project {
+  width: 100%;
+  display: inline-block;
+  border-radius: 3px;
+  background: #fff;
+  padding-bottom: 20px;
+
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  .img {
+    height: 200px;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    &.flexport {
+      background: #fcfcfc asset-url('portfolios/screenshot-flexport.png') no-repeat scroll 0 0;
+    }
+
+    &.plumalley {
+      background: #fcfcfc asset-url('portfolios/screenshot-plumalley.png') no-repeat scroll 0 0;
+    }
+
+    &.getgone {
+      background: #fcfcfc asset-url('portfolios/screenshot-getgone.png') no-repeat scroll 0 0;
+    }
+  }
+
+  a {
+    display: block;
+    margin: 10px;
+  }
+}

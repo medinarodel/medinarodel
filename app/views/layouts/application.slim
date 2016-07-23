@@ -1,0 +1,28 @@
+doctype html
+html lang="en" 
+  head
+    meta charset="utf-8"
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+    meta name="description" content="Rodel Samson Medina Website"
+    meta name="author" content="Rodel Samson Medina"
+    meta name="keywords" content="Rodel Samson Medina, iOS Developer, Swift, Objective C, Ruby on Rails, Web Developer, PHP"
+
+    meta name="og:title" content="Rodel Medina Professional Website"
+    meta name="og:type" content="website"
+    meta name="og:url" content=(root_url)
+    meta name="og:image" content=(image_url('initial.png'))
+    meta name="og:description" content="My work experiences and portfolios."
+    = csrf_meta_tags
+
+    = favicon_link_tag 'favicon.ico'
+
+    title Rodel Samson Medina :: Web Developer
+
+    = stylesheet_link_tag "application", media: "all"
+    link href="https://fonts.googleapis.com/css?family=Open+Sans:300&subset=latin,latin-ext" rel="stylesheet" 
+
+  body ng-app="app"
+    = yield
+
+    = javascript_include_tag 'application'

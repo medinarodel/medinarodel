@@ -1,0 +1,9 @@
+@import "header";
+@import "navigation";
+@import "animation";
+@import "portfolio";
+
+body {
+  font-family: "Open Sans";
+  background: #fcfcfc asset-url('bg.png') repeat scroll 0 0;
+}
